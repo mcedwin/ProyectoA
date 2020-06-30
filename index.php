@@ -20,7 +20,7 @@
     }else{
         echo "<table border=1>";
         echo "<tr>";
-        echo "<th>ID</th><th>NOMBRES</th><th>APELLIDOS</th><th>EDAD</th><th>OPCIONES</th>";
+        echo "<th>ID</th><th>NOMBRES</th><th>APELLIDOS</th><th>EDAD</th><th colspan='2'>OPCIONES</th>";
         echo "</tr>";
         while($reg = $result->fetch_assoc()){
             echo "<tr>";
@@ -29,6 +29,7 @@
             echo "<td>".$reg['apellidos']."</td>";
             echo "<td>".$reg['edad']."</td>";
             echo "<td><a href='eliminar.php?id=".$reg['id']."'>Eliminar</a></td>";
+            echo "<td><a href='editar.php?id=".$reg['id']."'>Editar</a></td>";
             echo "</tr>";
         }
         echo "</table>";

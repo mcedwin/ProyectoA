@@ -1,6 +1,15 @@
 <form action="eval.php" method="post">
-    <input type="text" name="nombres">
-    <input type="text" name="apellidos">
-    <input type="text" name="edad">
+    <p>
+        <label>Nombres</label>
+        <input type="text" name="nombres">
+    </p>
+    <p>
+        <label>Apellidos</label>
+        <input type="text" name="apellidos">
+    </p>
+    <p>
+        <label>Edad</label>
+        <input type="text" name="edad">
+    </p>
     <input type="submit">
 </form>
