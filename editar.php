@@ -33,6 +33,14 @@ if ($result->num_rows == 0) {
             <label>Edad</label>
             <input type="text" name="edad" value="<?php echo $reg['edad']; ?>">
         </p>
+        <p>
+            <label>DNI</label>
+            <input type="text" name="dni" value="<?php echo $reg['dni']; ?>">
+        </p>
+        <p>
+            <label>Correo</label>
+            <input type="text" name="correo" value="<?php echo $reg['correo']; ?>">
+        </p>
         <input type="submit">
     </form>
 
